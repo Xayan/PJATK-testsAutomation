@@ -1,0 +1,5 @@
+matrix:
+  include:
+    - language: java
+      script:
+        - (cd tau1-junit ; mvn test)
