@@ -1,5 +1,7 @@
 package pl.xayan.tau.tau1.DI;
 
+import pl.xayan.tau.tau1.exception.EntityNotFoundException;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -54,7 +56,11 @@ public abstract class AbstractRepository<T extends EntityInterface> implements R
         entityList.set(elementIndex, entity);
     }
 
-    public void delete(T entity) {
+    public void delete(T entity) throws EntityNotFoundException {
+        if(!entityList.contains(entity)) {
+            throw new EntityNotFoundException();
+        }
+
         entityList.remove(entity);
     }
 }

@@ -2,6 +2,7 @@ package pl.xayan.tau.tau1.repository;
 
 import junit.framework.TestCase;
 import pl.xayan.tau.tau1.entity.Feed;
+import pl.xayan.tau.tau1.exception.EntityNotFoundException;
 
 import java.util.List;
 
@@ -83,7 +84,7 @@ public class FeedRepositoryTest extends TestCase {
         assertEquals(newFeed, feedRepository.getById(1));
     }
 
-    public void testDelete()
+    public void testDelete() throws EntityNotFoundException
     {
         Feed feed = new Feed();
 
@@ -94,5 +95,16 @@ public class FeedRepositoryTest extends TestCase {
         feedRepository.delete(feed);
 
         assertEquals(0, feedRepository.getCount());
+    }
+
+    public void testDeleteException()
+    {
+        try {
+            feedRepository.delete(new Feed());
+
+            fail();
+        } catch(EntityNotFoundException e) {
+            assertNotNull(e);
+        }
     }
 }
