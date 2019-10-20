@@ -16,6 +16,11 @@ public class FeedRepositoryTest extends TestCase {
         feedRepository = new FeedRepository();
     }
 
+    public void testDatabaseExists()
+    {
+        assertNotNull(feedRepository);
+    }
+
     public void testInsert()
     {
         assertEquals(0, feedRepository.getCount());
