@@ -87,6 +87,8 @@ public class FeedRepositoryTest extends TestCase {
 
         assertEquals(1, feedRepository.getCount());
         assertEquals(newFeed, feedRepository.getById(1));
+
+        assertFalse(feedRepository.getAll().contains(feed));
     }
 
     public void testDelete() throws EntityNotFoundException
