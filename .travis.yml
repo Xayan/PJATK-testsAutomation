@@ -3,3 +3,7 @@ matrix:
     - language: java
       script:
         - (cd tau1-junit ; mvn test)
+  include:
+    - language: java
+      script:
+        - (cd tau3-bdd ; mvn test)
