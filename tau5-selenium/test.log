@@ -1,0 +1,132 @@
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------------------------< pl.xayan:tau5 >----------------------------
+[INFO] Building tau5 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tau5 ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/xayan/www/tau/tau5-selenium/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ tau5 ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tau5 ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tau5 ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to /Users/xayan/www/tau/tau5-selenium/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ tau5 ---
+[INFO] Surefire report directory: /Users/xayan/www/tau/tau5-selenium/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pl.xayan.tau5.TestRunner
+Feature: Website
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by cucumber.deps.com.thoughtworks.xstream.core.util.Fields (file:/Users/xayan/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of cucumber.deps.com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 31554
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Dec 09, 2019 11:37:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+  Scenario: Invalid sign in             # cucumber/selenium.feature:3
+    Given I am on the website           # AutomationSteps.i_am_on_the_website()
+    And email is dsfdsgdsfds@fdsfds.com # AutomationSteps.email_is(String)
+    And password is invalid_password    # AutomationSteps.password_is(String)
+    When I sign in                      # AutomationSteps.i_sign_in()
+    Then there is an error              # AutomationSteps.there_is_an_error()
+Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 48387
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Dec 09, 2019 11:37:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+  Scenario: Sign in                     # cucumber/selenium.feature:10
+    Given I am on the website           # AutomationSteps.i_am_on_the_website()
+    And email is dsfdsgdsfds@fdsfds.com # AutomationSteps.email_is(String)
+    And password is password            # AutomationSteps.password_is(String)
+    When I sign in                      # AutomationSteps.i_sign_in()
+    Then I am logged in                 # AutomationSteps.i_am_logged_in()
+Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 37203
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Dec 09, 2019 11:37:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+tau_sampleuser_-1460386811@example1329943874.com
+
+  Scenario: Invalid register    # cucumber/selenium.feature:17
+    Given I am on the website   # AutomationSteps.i_am_on_the_website()
+    When I sign up without data # AutomationSteps.i_sign_up_without_data()
+    Then there is an error      # AutomationSteps.there_is_an_error()
+
+  Scenario Outline: Register                       # cucumber/selenium.feature:22
+    Given browser resolution is <width> x <height>
+    And I am on the website
+    When I sign up
+    Then I am logged in
+
+    Examples:
+Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 31131
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Dec 09, 2019 11:37:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+tau_sampleuser_152204763@example-864559460.com
+
+  Scenario Outline: Register               # cucumber/selenium.feature:30
+    Given browser resolution is 1280 x 720 # AutomationSteps.browserResolutionIsWidthXHeight(Integer,Integer)
+    And I am on the website                # AutomationSteps.i_am_on_the_website()
+    When I sign up                         # AutomationSteps.i_sign_up()
+    Then I am logged in                    # AutomationSteps.i_am_logged_in()
+Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 10442
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Dec 09, 2019 11:37:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+tau_sampleuser_-557169704@example187537638.com
+
+  Scenario Outline: Register              # cucumber/selenium.feature:31
+    Given browser resolution is 800 x 600 # AutomationSteps.browserResolutionIsWidthXHeight(Integer,Integer)
+    And I am on the website               # AutomationSteps.i_am_on_the_website()
+    When I sign up                        # AutomationSteps.i_sign_up()
+    Then I am logged in                   # AutomationSteps.i_am_logged_in()
+Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 7875
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Dec 09, 2019 11:38:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+tau_sampleuser_623769353@example428745647.com
+
+  Scenario Outline: Register              # cucumber/selenium.feature:32
+    Given browser resolution is 400 x 800 # AutomationSteps.browserResolutionIsWidthXHeight(Integer,Integer)
+    And I am on the website               # AutomationSteps.i_am_on_the_website()
+    When I sign up                        # AutomationSteps.i_sign_up()
+    Then I am logged in                   # AutomationSteps.i_am_logged_in()
+
+6 Scenarios (6 passed)
+25 Steps (25 passed)
+1m23.936s
+
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.717 sec
+
+Results :
+
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:28 min
+[INFO] Finished at: 2019-12-09T23:38:27+01:00
+[INFO] ------------------------------------------------------------------------
+
