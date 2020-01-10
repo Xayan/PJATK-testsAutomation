@@ -9,3 +9,6 @@ matrix:
     - language: java
       script:
         - (cd tau3-bdd-jbehave ; mvn integration-test)
+    - language: java
+      script:
+        - (cd tau6-robot-cli/app ; mvn package ; cd ../test ; mvn robotframework:run)

@@ -26,12 +26,14 @@ TC_002 Figures
     10 1 1      nierozpoznano
     1 2 3       nierozpoznano
     5 6 0       nierozpoznano
+    0 0 0       nierozpoznano
 
     2 2 2 2    kwadrat
     2 3 3 2    prostokąt
     1 2 3 4    czworobok
     12 4 4 4   nierozpoznano
     5 5 5 20   nierozpoznano
+    0 0 0 0    nierozpoznano
 
     1          nierozpoznano
     1 2        nierozpoznano
