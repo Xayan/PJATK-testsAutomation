@@ -1,0 +1,50 @@
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------------------------< pl.xayan:tau5 >----------------------------
+[INFO] Building tau5 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- robotframework-maven-plugin:1.5.2:run (default-cli) @ tau5 ---
+==============================================================================
+Acceptance
+==============================================================================
+Acceptance.Selenium :: Selenium tests
+==============================================================================
+TC_001 Invalid Sign in                                                Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 20108
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+| PASS |
+------------------------------------------------------------------------------
+TC_002 Sign in                                                        Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 16449
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+| PASS |
+------------------------------------------------------------------------------
+TC_003 Invalid register                                               Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 43095
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+| PASS |
+------------------------------------------------------------------------------
+TC_004 Register                                                       Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 23535
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+| PASS |
+------------------------------------------------------------------------------
+Acceptance.Selenium :: Selenium tests                                 | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Acceptance                                                            | PASS |
+4 critical tests, 4 passed, 0 failed
+4 tests total, 4 passed, 0 failed
+==============================================================================
+Output:  /Users/xayan/www/tau/tau6-robot-selenium/target/robotframework-reports/output.xml
+XUnit:   /Users/xayan/www/tau/tau6-robot-selenium/target/robotframework-reports/TEST-acceptance.xml
+Log:     /Users/xayan/www/tau/tau6-robot-selenium/target/robotframework-reports/log.html
+Report:  /Users/xayan/www/tau/tau6-robot-selenium/target/robotframework-reports/report.html
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:17 min
+[INFO] Finished at: 2020-01-10T12:26:40+01:00
+[INFO] ------------------------------------------------------------------------
